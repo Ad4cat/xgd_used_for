@@ -4,12 +4,14 @@
 Scrapy の練習を兼ねて作成しました。
 
 ```zsh
-$ scrapy crawl xgd_spider -a n=X -o result.scv
+$ scrapy crawl xgd_spider -a n=X -o result.scv -s JOBDIR=crawls/restart-1
 ```
 
 ## 想定データ件数
 
 - 収集対象は **約 50 万件** を想定しています。
+  > 存在しない slug（<https://x.gd/view/notfound> にリダイレクトされる）も CSV に記録しています。
+  > 将来的に「存在する URL のみで 50 万件」に切り替えるか検討中です。
 
 ## 全組み合わせ数
 

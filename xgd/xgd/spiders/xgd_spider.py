@@ -80,7 +80,7 @@ class XgdSpiderSpider(scrapy.Spider):
                 meta_description = "",
                 lang = "",
                 content_type = "",
-                is_available = False,
+                is_used = False,
             )
             self.failed += 1
             if self.collected < self.n:
@@ -95,7 +95,7 @@ class XgdSpiderSpider(scrapy.Spider):
                 meta_description="",
                 lang="",
                 content_type=content_type,
-                is_available=False,
+                is_used=False,
                 failed=True,
             )
             self.failed += 1
@@ -120,7 +120,7 @@ class XgdSpiderSpider(scrapy.Spider):
             meta_description = meta_description,
             lang = lang,
             content_type = content_type,
-            is_available = True,
+            is_used = True,
             failed= False,
         )
         self.collected += 1
@@ -158,7 +158,7 @@ class XgdSpiderSpider(scrapy.Spider):
             meta_description= "",
             lang= "",
             content_type= content_type,
-            is_available= True,
+            is_used= True,
             failed= True,
         )
 

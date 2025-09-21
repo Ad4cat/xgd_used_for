@@ -4,7 +4,7 @@
 Scrapy の練習を兼ねて作成しました。
 
 ```zsh
-$ scrapy crawl xgd_spider -a n=X -o result.scv -s JOBDIR=crawls/restart-1
+$ scrapy crawl xgd_spider -a n=X -o result.csv -s JOBDIR=crawls/restart-1
 ```
 
 ## 想定データ件数

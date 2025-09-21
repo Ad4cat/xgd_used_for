@@ -100,6 +100,6 @@ FEED_EXPORT_FIELDS = [
 "meta_description",
 "lang",
 "content_type",
-"is_available",
+"is_used",
 "failed",
 ]

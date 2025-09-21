@@ -16,3 +16,4 @@ class XgdItem(scrapy.Item):
     lang = scrapy.Field()
     content_type = scrapy.Field()
     is_available = scrapy.Field()
+    failed = scrapy.Field()
